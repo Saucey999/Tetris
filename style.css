@@ -1,0 +1,120 @@
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+
+  border: 2px solid #000;
+  box-shadow: 7px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.shapes {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+}
+
+.mini-grid {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+  margin-left: 50px;
+  border: 2px solid #000;
+  box-shadow: 8px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.game-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+#start-btn {
+  position: relative;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+  margin-top: 30px;
+  cursor: pointer;
+  padding: 20px 20px;
+  border: none;
+
+  border-radius: 4px;
+
+  font-size: larger;
+  box-shadow: 8px 5px rgba(0, 0, 0, 0.6);
+}
+#start-btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+#start-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.35s;
+  border-radius: 4px;
+  background: green;
+}
+#start-btn:hover {
+  color: #fff;
+}
+
+#start-btn:hover:after {
+  width: 100%;
+}
+
+html {
+  height: 100%;
+}
+body {
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-width: 960px;
+}
+
+#score {
+  color: #000;
+  font-size: 50px;
+}
